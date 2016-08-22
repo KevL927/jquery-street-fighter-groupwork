@@ -14,12 +14,20 @@ body {
 
 .ryu {
   float: left;
+  position:relative;
 }
 
 .hulk-ryu {
-  filter:hue-rotate(90deg);
-  position:relative;
-  left: 750px;
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+  position: relative;
+  left: 660px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 .ryu, .hulk-ryu {
